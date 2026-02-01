@@ -4,25 +4,25 @@
 
 # Site
 title: YXLIPA
-subtitle: iOS6 thmem.
+subtitle: iOS6 theme.
 description: >
   The brain is wider than the sky.<br>
-  For, put them side by side, <br>
+  For, put them side by side,<br>
   the one the other will contain.<br>
   With ease, and you beside.
 keywords:
-author: yxl
-language: zh
+author: 心恋
+language: zh-CN          # 推荐用 zh-CN，更标准
 timezone: ''
 
-# URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+# URL（最关键！必须这样写，否则 CSS/JS 路径会错）
 url: https://yxlipa.github.io
-permalink: :title/
+root: /
+permalink: :title/       # 文章链接格式，简洁
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: true
+  trailing_html: true
 
 # Directory
 source_dir: source
@@ -35,12 +35,12 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :title.md
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: false
 external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  enable: true
+  field: site
   exclude: ''
 filename_case: 0
 render_drafts: false
@@ -61,9 +61,6 @@ prismjs:
   tab_replace: ''
 
 # Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
   per_page: 10
@@ -75,37 +72,25 @@ category_map:
 tag_map:
 
 # Metadata elements
-## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
 
 # Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
 
 # Pagination
-## Set per_page to 0 to disable pagination
 per_page: 10
 pagination_dir: page
 
 # Include / Exclude file(s)
-## include:/exclude: options only apply to the 'source/' folder
 include:
 exclude:
 ignore:
 
 # Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes
-theme: aero
+theme: aero              # 确认启用 aero 主题
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
+# Deployment（如果你用 Actions 部署，这个可以留空或注释）
 deploy:
   type: ''
-
-
