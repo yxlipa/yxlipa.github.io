@@ -4,8 +4,12 @@
 
 # Site
 title: YXLIPA
-subtitle: ''
-description: ''
+subtitle: iOS6 thmem.
+description: >
+  The brain is wider than the sky.<br>
+  For, put them side by side, <br>
+  the one the other will contain.<br>
+  With ease, and you beside.
 keywords:
 author: 尐御
 language: en
@@ -97,7 +101,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: aero
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
